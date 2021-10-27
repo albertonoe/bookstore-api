@@ -20,18 +20,14 @@ public class Livro implements Serializable {
 	private String titulo;
 	private String nome_autor;
 	private String texto;
-
 	@ManyToOne
 	@JoinColumn(name = "categoria_id")
 	private Categoria categoria;
 
 	public Livro() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Livro(Integer id, String titulo, String nome_autor, String texto, Categoria categoria) {
-		super();
 		this.id = id;
 		this.titulo = titulo;
 		this.nome_autor = nome_autor;
